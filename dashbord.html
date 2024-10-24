@@ -35,8 +35,8 @@
         justify-content: center;
     }
     #d{
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         margin: 10px;
         border-radius: 20px;
         margin-top: 10px;
@@ -48,8 +48,8 @@
         z-index: 2;
     }
     img{
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
     }
     img:hover{
         background-color: black;
@@ -159,20 +159,20 @@
     <div id="down">
         <div id="item">
             <form action="dashbord.html">
-                <button onclick="" id="btn">
+                <button id="btn">
                 </button>
             </form>
         </div>
         <div id="item">
             <form action="market.html">
-                <button onclick="tea()" id="btn1">
+                <button id="btn1">
                  
                 </button>
             </form>
         </div>
         <div id="item">
             <form action="ivest.html">
-                <button onclick="invest()" id="btn2">
+                <button id="btn2">
             
                 </button>
                 </form>
@@ -190,13 +190,8 @@
     <script>
         var market = "Here is the purpose of the market place it will allow you buy and exchange your product as you can see the available products in the market and there specific prices. Thank you for joining our platform.";
         var invests = "The purpose of investment.  is help you to invest from what you buy from our market because we set up the prices are uses to updates automatically to help ours investor's who buy products in our platform to get some profit and to avoid the loosing of capitals.";
-        var messa = "This will help you to connect with people around the Nigerian to invest and growth together.";
-        function tea(){
-            responsiveVoice.speak(market,"UK English Male");
-        }
-        function invest(){
-            responsiveVoice.speak(invests,"UK English Male");
-        }
+        var messa = "Message will help you to connect with people around the Nigerian to invest and growth together.";
+        
         function msg(){
             responsiveVoice.speak(messa,"UK English Male");
         }
