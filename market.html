@@ -13,6 +13,7 @@
     #dashbord{
         height: 200px;
         width: 100%;
+         margin-top: -2%;
         overflow: none;
        background:-webkit-linear-gradient(lime, limegreen)
     }
@@ -140,7 +141,7 @@
         </div>
         <div id="item">
             <form action="#">
-                <button id="btn3">
+                <button onclick="msg()" id="btn3">
                    
                 </button>
                 </form>
@@ -150,9 +151,13 @@
     <script>
         var market = "Here is the purpose of the market place it will allow you buy and exchange your product as you can see the available products in the market and there specific prices. Thank you for joining our platform.";
        // var invests = "The purpose of investment.  is help you to invest from what you buy from our market because we set up the prices are uses to updates automatically to help ours investor's who buy products in our platform to get some profit and to avoid the loosing of capitals.";
-       // var messa = "This will help you to connect with people around the Nigerian to invest and growth together.";
+        var messa = "This will help you to connect with people around the Nigerian to invest and growth together.";
         
             responsiveVoice.speak(market,"UK English Male");
+
+         function msg(){
+            responsiveVoice.speak(messa,"UK English Male");
+        }
        
     </script>
 </body>
