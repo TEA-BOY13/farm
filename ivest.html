@@ -13,6 +13,7 @@
     #dashbord{
         height: 200px;
         width: 100%;
+        margin-top:0%;
         overflow: none;
        background:-webkit-linear-gradient(lime, limegreen)
     }
@@ -162,7 +163,7 @@
         </div>
         <div id="item">
             <form action="#">
-                <button id="btn3">
+                <button onclick="msg()" id="btn3">
                    
                 </button>
                 </form>
@@ -176,6 +177,9 @@
       
           
             responsiveVoice.speak(invests,"UK English Male");
+         function msg(){
+            responsiveVoice.speak(messa,"UK English Male");
+        }
       
            </script>
 </body>
