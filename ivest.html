@@ -59,63 +59,68 @@
         width: 200px;
     }
     #down{
-        height: 100px;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         text-align: justify;
-        justify-content: space-between;
+        justify-content: space-around;
         overflow-y: auto;
+        background-color: lightgreen;
+    }
+    button:hover{
+        background-color: lightgreen;
+        box-shadow: 4px 4px 4px;
+        color: red;
     }
     #btn{
-        height: 60px;
-        width: 52px;
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
         margin-top: 30px;
         margin-top: 30px;
         margin: 10px;
         border: none;
         text-align: center;
-        background-image: url(homesk.png);
-        background-repeat: no-repeat;
-        background-size: contain;
+      
 
     }
     #btn1{
-        height: 60px;
-        width: 52px;
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
         margin-top: 30px;
         margin: 10px;
         border: none;
         text-align: center;
-        background-image: url(mark.png);
-        background-repeat: no-repeat;
-
+       
     }
     #btn2{
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
         margin-top: 30px;
         margin-top: 30px;
         margin: 10px;
         border: none;
         text-align: center;
-        background-image: url(invesg.png);
-        background-repeat: no-repeat;
+      
 
     }
     #btn3{
-        height: 60px;
-        width: 52px;
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
         margin-top: 30px;
         margin-top: 30px;
         margin: 10px;
         border: none;
         text-align: center;
-        background-image: url(mess.png);
-        background-repeat: no-repeat;
+      
 
     }
+   
 </style>
 <body>
     <div id="dashbord">
@@ -123,6 +128,36 @@
         <h3 style="text-align: end;">Farm Mart</h3>
         
         <p id="name" style="margin-bottom: 100%;">Here are the available products for investement and their location!</p>
+        </div>
+     <div id="down">
+            <div id="item">
+                <form action="dashbord.html">
+                    <button onclick="" id="btn">
+                        HOME
+                    </button>
+                </form>
+            </div>
+            <div id="item">
+                <form action="market.html">
+                    <button onclick="tea()" id="btn1">
+                     MARKET
+                    </button>
+                    </form>
+            </div>
+            <div id="item">
+                <form action="ivest.html">
+                    <button onclick="invest()" id="btn2">
+                INVESTEMENT
+                    </button>
+                    </form>
+            </div>
+            <div id="item">
+                <form action="#">
+                    <button onclick="msg()" id="btn3">
+                       MESSAGES
+                    </button>
+                    </form>
+            </div>
         </div>
     <div class="container">
         <div id="d">
@@ -140,35 +175,7 @@
             <img src="invest4.png" alt="image not found">
         </div>
     </div>
-    <div id="down">
-        <div id="item">
-            <form action="dashbord.html">
-                <button id="btn">
-                </button>
-            </form>
-        </div>
-        <div id="item">
-            <form action="market.html">
-                <button id="btn1">
-                 
-                </button>
-                </form>
-        </div>
-        <div id="item">
-            <form action="ivest.html">
-                <button id="btn2">
-            
-                </button>
-                </form>
-        </div>
-        <div id="item">
-            <form action="#">
-                <button onclick="msg()" id="btn3">
-                   
-                </button>
-                </form>
-        </div>
-    </div>
+   
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <script>
        // var market = "Here is the purpose of the market place it will allow you buy and exchange your product as you can see the available products in the market and there specific prices. Thank you for joining our platform.";
